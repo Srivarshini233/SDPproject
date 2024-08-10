@@ -1,0 +1,87 @@
+.order-details-page {
+    background-color: white;
+    color: black;
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: black;
+  }
+  
+  .navbar-link {
+    color: white;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+  
+  .order-confirmation {
+    margin-top: 50px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .confirmation-message {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .green-tick {
+    font-size: 36px;
+    color: green;
+    margin-right: 10px;
+  }
+  
+  .delivery-date {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .order-summary {
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .products-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .product-card {
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .total-amount {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .continue-shopping-btn {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .continue-shopping-btn:hover {
+    background-color: darkgreen;
+  }
+  

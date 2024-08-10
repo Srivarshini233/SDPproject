@@ -2,6 +2,8 @@ package com.max.quizspring.service;
 
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -36,5 +38,12 @@ public class OrderService {
         order.setOrderConfirmed(false); // Default value for new orders
 
         return or.save(order);
+    }
+    public String deleteorder(Long id){
+        or.deleteById(id);
+        return "User Deleted Successfully" + id;
+    }
+    public List<Orders> getorder(){
+        return or.findAll();
     }
 }

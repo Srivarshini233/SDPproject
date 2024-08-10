@@ -1,0 +1,110 @@
+.buy-now-page {
+    background-color: white;
+    color: black;
+  }
+  
+  .buy-now-navbar {
+    background-color: black;
+    padding: 1rem;
+  }
+  
+  .buy-now-navbar-link {
+    color: white;
+    margin-right: 1rem;
+  }
+  
+  .buy-now-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .buy-now-products-section {
+    width: 60%;
+  }
+  
+  .buy-now-section-title {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .buy-now-products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    overflow-y: auto;
+    max-height: 80vh;
+  }
+  
+  .buy-now-product-card {
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+  }
+  
+  .buy-now-product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+  }
+  
+  .buy-now-remove-button {
+    background-color: red;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+  
+  .buy-now-remove-button:hover {
+    background-color: darkred;
+  }
+  
+  .buy-now-delivery-section {
+    width: 35%;
+  }
+  
+  .buy-now-delivery-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .buy-now-form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .buy-now-form-group label {
+    color: black;
+    margin-bottom: 0.5rem;
+  }
+  
+  .buy-now-form-group input {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .buy-now-form-group input:hover {
+    border-color: black;
+  }
+  
+  .buy-now-proceed-button {
+    background-color: green;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .buy-now-proceed-button:hover {
+    background-color: darkgreen;
+  }
+  

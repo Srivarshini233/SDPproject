@@ -1,0 +1,133 @@
+.order-page {
+    background-color: white;
+    color: black;
+  }
+  
+  .order-navbar {
+    background-color: black;
+    padding: 1rem;
+  }
+  
+  .order-navbar-link {
+    color: white;
+    margin-right: 1rem;
+  }
+  
+  .order-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    flex-grow: 1;
+  }
+  
+  .order-payment-section {
+    width: 40%;
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .order-section-title {
+    color: black;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .order-payment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .order-form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .order-form-group input {
+    margin-right: 0.5rem;
+  }
+  
+  .order-products-section {
+    width: 55%;
+    margin-left: auto;
+    padding: 1rem;
+    overflow-y: auto;
+    height: calc(100vh - 64px); /* Adjust according to navbar height */
+  }
+  
+  .order-products-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .order-product-card {
+    background-color: #f8f8f8;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .order-product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .order-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .order-modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+  
+  .order-confirm-button {
+    background-color: green;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  
+  .order-qr-code {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  

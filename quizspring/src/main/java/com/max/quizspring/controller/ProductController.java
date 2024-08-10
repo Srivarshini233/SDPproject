@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.max.quizspring.model.Product;
 
 @RestController()
-@RequestMapping("/users")
+@RequestMapping("/api/users")
 public class ProductController {
     @Autowired
     private com.max.quizspring.service.ProductService uservice;

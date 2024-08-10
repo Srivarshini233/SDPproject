@@ -1,0 +1,197 @@
+/* UserProduct.css */
+
+
+
+.eyeglass-page {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  background-color: #000; /* Set entire page background to black */
+}
+
+/* Navigation bar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  max-width: 100%;
+  height: 5rem;
+  object-fit: contain;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  z-index: 1000; /* Increased z-index */
+  width: 100%; /* Set full width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-content: flex-end;
+}
+
+.navbar .nav-button {
+  border: 1px solid #000;
+  padding: 8px 16px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  background-color: rgb(207, 2, 132); /* Set button color to pink */
+  color: #fff;
+}
+
+.navbar .nav-button:hover {
+  background-color: rgb(207, 2, 132);
+  color: #fff;
+}
+
+/* Filters section styling */
+.filters {
+  width: 200px; /* Reduced width */
+  padding: 10px; /* Reduced padding */
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+  position: fixed;
+  top: 50px; /* Adjusted to be below the navbar */
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 900; /* Lower than navbar */
+}
+
+.filters h2 {
+  margin-top: 0;
+  font-size: 18px; /* Adjusted font size */
+}
+
+.filter-group {
+  margin-bottom: 10px; /* Reduced bottom margin */
+}
+
+.filter-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px; /* Reduced bottom margin */
+}
+
+.filter-option input[type="checkbox"] {
+  margin-right: 6px; /* Reduced margin */
+}
+
+.filter-option label {
+  cursor: pointer;
+  font-size: 14px; /* Adjusted font size */
+}
+
+.reset {
+  background-color: transparent;
+  border: 2px solid rgb(207, 2, 132); /* Set border color to pink */
+  color: rgb(207, 2, 132);
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.reset:hover {
+  background-color: rgb(207, 2, 132);
+  color: #fff;
+}
+
+/* Product list section styling */
+.products {
+ 
+ /* Adjusted padding */
+  margin-left: 200px; /* Adjusted space for the fixed filters */
+  margin-top: 60px;
+  margin-top: 6%; /* Adjusted to be below the navbar */
+  overflow-y: auto;
+  padding: 2%;
+}
+
+/* Product header styling */
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   /* Adjusted bottom margin */
+}
+
+.product-header h2 {
+  
+  font-size: 20px; /* Adjusted font size */
+}
+
+.toggle-fit {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 8px 14px; /* Adjusted padding */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.toggle-fit:hover {
+  background-color: #333;
+}
+
+/* Product grid styling */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 products per row */
+  gap: 15px; /* Adjusted gap */
+  max-width: 100%;
+  box-sizing: border-box;
+  transform: scale(0.9); /* Reduce grid size */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Product card styling */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px; /* Reduced padding */
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product-card h3 {
+  margin: 8px 0; /* Adjusted margin */
+  font-size: 16px; /* Adjusted font size */
+}
+
+.product-card p {
+  margin: 4px 0; /* Adjusted margin */
+  font-size: 14px; /* Adjusted font size */
+}
+
+/* Wishlist button styling */
+.wishlist {
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  background: none;
+  border: 2px solid red;
+  border-radius: 50%;
+  width: 30px; /* Adjusted width */
+  height: 30px; /* Adjusted height */
+  font-size: 18px; /* Adjusted font size */
+  color: transparent;
+  cursor: pointer;
+  transition: color 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlist:hover {
+  color: rgba(255, 0, 0, 0.7);
+}

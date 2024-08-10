@@ -1,0 +1,63 @@
+/* ShopByCategory.css */
+
+.shop-by-category {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center all children horizontally */
+    text-align: center; /* Center text inside this container */
+  }
+  
+  .shop-by-category h2 {
+    text-align: center; /* Center the heading text */
+  }
+  
+  .category-tabs {
+    display: flex;
+    justify-content: center; /* Center tabs horizontally */
+    margin-bottom: 1rem;
+  }
+  
+  .category-tabs button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f0f0f0;
+    cursor: pointer;
+  }
+  
+  .category-tabs button.active {
+    border-bottom: 2px solid #007bff;
+    font-weight: bold;
+  }
+  
+  .category-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center category items horizontally */
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .category-item {
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    flex: 0 1 auto;
+  }
+  
+  .category-item img {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+  }
+  
+  .category-item span {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .category-item:hover img {
+    transform: scale(1.1);
+  }

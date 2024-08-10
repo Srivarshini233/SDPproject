@@ -1,0 +1,190 @@
+/* WishList.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+
+.wishlist-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.navbar-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  margin: 0 0.5rem;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.wishlist-products {
+  flex: 1;
+  padding: 2rem;
+  margin-top: 10px; /* Adjust if needed to avoid overlap */
+  overflow-x: hidden;
+}
+
+.wishlist-products h2 {
+  color: #000;
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.wishlist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.wishlist-card {
+  width: calc(25% - 2rem); /* Smaller width for the cards */
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.wishlist-card:hover {
+  transform: scale(1.05);
+}
+
+.wishlist-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #000;
+  margin-bottom: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.wishlist-card h3 {
+  font-size: 1.25rem; /* Smaller font size for the title */
+  color: #000;
+  margin-bottom: 0.5rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.wishlist-card p {
+  font-size: 0.875rem; /* Smaller font size for the text */
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.remove-wishlist {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ff0000;
+  transition: color 0.3s ease;
+}
+
+.remove-wishlist:hover {
+  color: #ff0000;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Ensure buttons have space between them */
+  gap: 4rem; /* Add gap between buttons */
+}
+
+.add-to-cart, .remove-from-wishlist {
+  flex: 1;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.remove-from-wishlist {
+  background-color: #ff0000; /* Red for remove button */
+}
+
+.add-to-cart:hover, .remove-from-wishlist:hover {
+  background-color: #333;
+}
+
+
+
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.wishlist-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.wishlist-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.wishlist-card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.wishlist-card p {
+  font-size: 14px;
+  color: #777;
+  margin: 5px 0;
+}
+
+.flex-value {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.add-to-cart,
+.remove-from-wishlist {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-to-cart:hover,
+.remove-from-wishlist:hover {
+  background-color: #0056b3;
+}
+
+.font-bold {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}

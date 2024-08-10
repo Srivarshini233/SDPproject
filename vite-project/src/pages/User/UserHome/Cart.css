@@ -1,0 +1,106 @@
+.cart-page {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .navbar {
+    background-color: #0f0404;
+    margin-bottom: 40px;
+    text-align: right;
+  }
+  .card-made{
+    font-size: 34px;
+  }
+  
+  .navbar-link {
+    font-style: bold;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  .bg-blue{
+    margin-top: 50px;
+    background-color:rgb(92, 92, 204);
+    color:#ddd;
+    padding: 1%;
+    border-radius: 20px;
+    font-style: normal;
+    font-size: 20px;
+    padding-top: 1%;
+    height: 50px;
+    width: 120px;
+  }
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+  
+  .cart-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+    gap: 20px;
+  }
+  
+  .cart-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width:100%;
+  }
+  
+  .cart-card img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .cart-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .cart-card p {
+    margin: 5px 0;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .quantity-controls button {
+    background-color: #ddd;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .quantity-controls span {
+    margin: 0 10px;
+    font-size: 1.2em;
+  }
+  
+  .product-total {
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .total-price {
+    margin-top: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: right;
+    gap:20%;
+    padding: 2%;
+    
+  }
+  
