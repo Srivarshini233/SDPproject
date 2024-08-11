@@ -7,6 +7,7 @@ import "../UserHome/UserProduct.css";
 const ToyProduct = () => {
   const [productList, setProductList] = useState([]);
   const { toggleFavorite, addToCart } = useContext(StoreContext);
+  const [showPopup, setShowPopup] = useState(false);
   const [selectedFilters, setSelectedFilters] = useState({
     shape: { spaceship: false, house: false, track: false, robot: false, gun: false },
     color: { black: false, pink: false, red: false, blue: false, orange: false },
@@ -198,7 +199,7 @@ const ToyProduct = () => {
       </aside>
       <main className="products">
         <div className="product-header">
-          <h2>Toys</h2>
+          <h6 className="text-decoration">Toys</h6>
           <button className="toggle-fit">Enable My Fit</button>
         </div>
         <div className="product-grid">
@@ -219,7 +220,7 @@ const ToyProduct = () => {
                 <p className='font-bold'>Color: {product.color}</p>
                
               </div>
-              <button className="add-to-cart" onClick={() => addToCart(product)}>Add to Cart</button>
+              <button className="add-to-cart flash-message " onClick={() => addToCart(product)}>Add to Cart</button>
             </div>
           ))}
         </div>

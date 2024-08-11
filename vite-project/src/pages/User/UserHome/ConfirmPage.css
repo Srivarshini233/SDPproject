@@ -4,10 +4,9 @@
     padding: 20px;
   }
   
-  .navbar {
-    background-color: black;
+  .navbar{
+    background-color: rgb(177, 227, 236);
   }
-  
   .navbar-link {
     color: white;
     margin-right: 20px;

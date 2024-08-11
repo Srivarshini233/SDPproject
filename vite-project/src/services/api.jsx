@@ -28,10 +28,10 @@ const DeleteProductByID = (id)=> axiosInstance.delete(`users/deleteproduct/${id}
 const addProduct = (product) => axiosInstance.post(`users/addproducts`,product);
 const orderData = ()=>axiosInstance.get(`/orders/getOrder/All`);
 const DeleteOrder = (id)=> axiosInstance.delete(`orders/delete/${id}`);
-
+const postOrder = (userId,productId,userAddress,payMethod)=>axiosInstance.post(`orders/post`,{userId,productId,userAddress,payMethod});
 const getAllUsers = () => axiosInstance.get('/users/all')
 
-export { axiosInstance, SignUp, WebData, UserData, UpdateUserByID, getAllUsers, DeleteUserByID,ProductData,DeleteProductByID ,addProduct,orderData,DeleteOrder}
+export { axiosInstance, SignUp, WebData, UserData, UpdateUserByID, getAllUsers, DeleteUserByID,ProductData,DeleteProductByID ,addProduct,orderData,DeleteOrder,postOrder}
 
 
 

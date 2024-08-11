@@ -71,7 +71,7 @@ const AdminProducts = () => {
   };
 
   return (
-    <div className='m-1 p-4'>
+    <div className='m-1 p-4 overflow-scroll'>
       <Card className='shadow-sm shadow-primary'>
         <CardHeader className='w-full flex flex-row justify-between items-center'>
           <CardTitle>Products</CardTitle>

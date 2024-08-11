@@ -15,7 +15,6 @@ import Cart from './pages/User/UserHome/Cart';
 import AdminDashboard from './pages/Admin/AdminDashboard';
 import AdminUsers from './pages/Admin/AdminUsers';
 import BuyNow from './pages/User/UserHome/BuyNow';
-import OrderPage from './pages/User/UserHome/OrderPage';
 import OrderDetails from './pages/User/UserHome/ConfirmPage';
 import AdminProducts from './pages/Admin/AdminProduct';
 import AdminOrders from './pages/Admin/AdminOrder';
@@ -29,6 +28,7 @@ const App = () => {
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
             <Route path='/notfound' element={<Notfound />} />
+      
           </Route>
           <Route element={<Userlayout />}>
             <Route path='/shopbycategory' element={<ShopByCategory />} />
@@ -36,7 +36,6 @@ const App = () => {
             <Route path='/wishlist' element={<WishList />} />
             <Route path='/cart' element={<Cart/>} />
             <Route path="/buynow" element={<BuyNow />} />
-            <Route path="/order" element={<OrderPage />} />
             <Route path="/confirmpage" element={<OrderDetails />} />
           </Route>
           <Route element={<Adminlayout />}>

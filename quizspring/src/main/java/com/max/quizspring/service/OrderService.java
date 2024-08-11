@@ -35,7 +35,7 @@ public class OrderService {
         order.setProduct(product);
         order.setUserAddress(userAddress);
         order.setPayMethod(payMethod);
-        order.setOrderConfirmed(false); // Default value for new orders
+        order.setOrderConfirmed(true); // Default value for new orders
 
         return or.save(order);
     }

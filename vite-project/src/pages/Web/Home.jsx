@@ -5,6 +5,7 @@ import { Carousel } from 'react-responsive-carousel'
 const Home = () => {
   return (<>
   <div className='flex justify-center items-center'><BoxRevealDemo/></div>
+  
     <div className='w-full h-screen flex justify-center items-center text-xl pt-20'>
        
 

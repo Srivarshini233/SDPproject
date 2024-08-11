@@ -1,0 +1,38 @@
+.moving-line-container {
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: -30px; /* Move the entire container further up */
+    padding-top: 20px; /* Adjust padding to position the line higher */
+    display: flex;
+    align-items: center;
+  }
+  
+  .moving-line {
+    display: inline-block;
+    font-size: 42px; /* Font size for the text */
+    color: white;
+    text-shadow: 
+      -1px -1px 0 purple,  
+      1px -1px 0 purple,  
+      -1px 1px 0 purple,  
+      1px 1px 0 purple; 
+    font-weight: bold;
+    animation: moveText 10s linear infinite;
+    position: relative;
+    white-space: nowrap;
+    top: -15px; /* Move the text further up within the container */
+  }
+
+  /* Duplicate the moving line to create a continuous effect */
+  .moving-line:nth-child(2) {
+    animation-delay: 4s; /* Adjust the delay to start the second line as the first ends */
+  }
+  
+  @keyframes moveText {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }

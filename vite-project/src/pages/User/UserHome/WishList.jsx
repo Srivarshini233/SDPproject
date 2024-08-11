@@ -24,7 +24,7 @@ const WishList = () => {
         </div>
       </nav>
       </div>
-      <main className="wishlist-products">
+      <main className="wishlist-products p-20">
         <h2 className="font-bold">Your WishList</h2>
         <div className="wishlist-grid">
           {wishList.length > 0 ? (

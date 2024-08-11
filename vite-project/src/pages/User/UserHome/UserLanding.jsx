@@ -33,8 +33,8 @@ const UserHome = ({handleNavigation}) => {
     };
 
   return (
-    <div className=" bg-gray-100 mt-8">
-    <nav className="bg-white shadow-md p-4 relative z-50">
+    <div className=" bg-gray-100 ">
+    <nav className="bg-blue-200 shadow-md p-6 relative z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-xl text-fuchsia-700 font-serif">TOYTIDE</div>
         <div className="flex space-x-6">
@@ -43,7 +43,7 @@ const UserHome = ({handleNavigation}) => {
             onMouseLeave={handleMouseLeave}
             className="relative"
           >
-            <div className="text-lg cursor-pointer">Ages</div>
+            <div className="text-lg text-purple-800 cursor-pointer">Ages</div>
             {dropdown === 'ages' && (
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-50">
                 <div className="p-2">0-2 years</div>
@@ -59,7 +59,7 @@ const UserHome = ({handleNavigation}) => {
             onMouseLeave={handleMouseLeave}
             className="relative"
           >
-            <div className="text-lg cursor-pointer">Category</div>
+            <div className="text-lg  text-purple-800 cursor-pointer">Category</div>
             {dropdown === 'category' && (
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-50">
                 <div className="p-2">Action Figures</div>
@@ -75,7 +75,7 @@ const UserHome = ({handleNavigation}) => {
             onMouseLeave={handleMouseLeave}
             className="relative"
           >
-            <div className="text-lg cursor-pointer">Brand</div>
+            <div className="text-lg  text-purple-800 cursor-pointer">Brand</div>
             {dropdown === 'brand' && (
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-50">
                 <div className="p-2">Lego</div>
@@ -91,7 +91,7 @@ const UserHome = ({handleNavigation}) => {
             onMouseLeave={handleMouseLeave}
             className="relative"
           >
-            <div className="text-lg cursor-pointer">Deals & Promotions</div>
+            <div className="text-lg  text-purple-800 cursor-pointer">Deals & Promotions</div>
             {dropdown === 'deals' && (
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-50">
                 <div className="p-2">Discounts</div>
@@ -105,7 +105,7 @@ const UserHome = ({handleNavigation}) => {
             onMouseLeave={handleMouseLeave}
             className="relative"
           >
-            <div className="text-lg cursor-pointer">Characters</div>
+            <div className="text-lg  text-purple-800 cursor-pointer">Characters</div>
             {dropdown === 'characters' && (
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-50">
                 <div className="p-2">Disney</div>
@@ -122,7 +122,7 @@ const UserHome = ({handleNavigation}) => {
             onMouseLeave={handleMouseLeave}
             className="relative"
           > */}
-        <div className="text-lg flex items-center pr-2">
+        <div className="text-lg  text-purple-800 flex items-center pr-2">
           
           <div className="pl-3 font-semibold">{username}</div>
           <div  className="pl-4"><button onClick={()=>handleNavi("/")} > LogOut </button></div>
