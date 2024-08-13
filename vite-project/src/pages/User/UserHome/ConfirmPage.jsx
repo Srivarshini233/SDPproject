@@ -7,13 +7,13 @@ const OrderDetails = () => {
   const { cart, totalPrice, paymentMethod } = location.state;
   const deliveryDate = new Date();
   deliveryDate.setDate(deliveryDate.getDate() + 5); // Assuming 5 days for delivery
-
+  
   return (
-    <div className="order-details-page h-screen w-screen overflow-auto">
+    <div className="order-details-page h-screen w-screen mt-20 overflow-auto">
       <nav className="navbar flex justify-end items-end p-4">
         <Link to="/" className="navbar-link">Home</Link>
       </nav>
-      <div className="order-confirmation flex flex-col items-center p-4">
+      <div className="order-confirmation flex flex-col items-center mt-5 p-4">
         <div className="confirmation-message flex items-center mb-4">
           <span className="green-tick">✔</span>
           <h2>Your Order is Confirmed!</h2>

@@ -36,7 +36,7 @@ const AdminUsers = () => {
   const [users, setUsers] = useState(null);
 
   const editUser = (uid) => {
-    navigate(`/admin/plans/user/${uid}`);
+    
   };
 
   const deleteUser = (uid) => {
@@ -98,9 +98,9 @@ const AdminUsers = () => {
                     <TableCell>{user.phone}</TableCell>
                     <TableCell>{user.email}</TableCell>
                     <TableCell className="flex justify-center items-center gap-4">
-                      <Button variant="outline" onClick={() => editUser(user.uid)}>
+                      {/* <Button variant="outline" onClick={() => editUser(user.uid)}>
                         <Pencil className='text-blue-500' size={20} />
-                      </Button>
+                      </Button> */}
                       <Button variant="outline" onClick={() => deleteUser(user.uid)}>
                         <Trash className='text-red-500' size={20} />
                       </Button>

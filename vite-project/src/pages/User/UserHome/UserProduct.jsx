@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { StoreContext } from "@/StoreProvider"; // Adjust the import path as needed
 import { ProductData } from '@/services/api';
 import "../UserHome/UserProduct.css";
+import toast, { Toaster } from 'react-hot-toast';
 
 const ToyProduct = () => {
   const [productList, setProductList] = useState([]);
@@ -37,7 +38,10 @@ const ToyProduct = () => {
       },
     }));
   };
-
+ const handleWishList=(product)=>{
+  toast.success("product added to WishList");
+  toggleFavorite(product);
+ }
   const getFilteredProducts = () => {
     return productList.filter((product) => {
       const { size, color, shape, price } = selectedFilters;
@@ -74,7 +78,10 @@ const ToyProduct = () => {
   const handleNavigation = (path) => {
     navigate(path);
   };
-
+ const handleCart = (product)=>{
+  toast.success("product added");
+  addToCart(product)
+ }
   return (
     <div className="toy-page">
       <nav className="navbar overflow-hidden object-contain m-0">
@@ -208,7 +215,7 @@ const ToyProduct = () => {
               <img src={product.image} alt={product.name} />
               <button
                 className="wishlist"
-                onClick={() => toggleFavorite(product)}
+                onClick={() => handleWishList(product)}
               >
                 ❤
               </button>
@@ -220,11 +227,13 @@ const ToyProduct = () => {
                 <p className='font-bold'>Color: {product.color}</p>
                
               </div>
-              <button className="add-to-cart flash-message " onClick={() => addToCart(product)}>Add to Cart</button>
+              <button className="add-to-cart flash-message" onClick={() => handleCart(product)}>Add to Cart</button>
             </div>
+              
           ))}
         </div>
       </main>
+      <Toaster/>
     </div>
   );
 };

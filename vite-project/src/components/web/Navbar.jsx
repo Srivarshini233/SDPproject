@@ -25,8 +25,9 @@ const Navbar = () => {
     };
     return (
         <div className='w-screen absolute h-[10vh]  flex flex-row justify-center items-center  border-b-2 border-primary/10 g-10 navbar'>
-             <div className='h-full w-1/4 flex flex-row justify-center items-center'>
-              TOYTIDE
+             <div className='h-full w-1/4 flex flex-row justify-start items-center'>
+             <div className='flex-shrink-0'>
+              <img className = "block h-16 justify-start w-auto" src = "https://extrokids.com/cdn/shop/files/extrokids-logo_png.webp?v=1708359316&width=300"/></div>
              </div>
              <nav className="m-14 pr-4">
         <button onClick={() => handleNavigation("/")} className="nav-button pr-4" >

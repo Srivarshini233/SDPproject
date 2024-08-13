@@ -5,7 +5,7 @@ export  function BoxRevealDemo() {
   return (
     <div className="h-full w-full max-w-[32rem] flex flex-col items-center justify-center overflow-hidden pt-8 ">
       <BoxReveal boxColor={"#5046e6"} duration={0.5}>
-        <p className="text-[2.5rem] font-semibold text-[#e6467b]">
+        <p className="text-[4rem] font-semibold text-[#02100e]">
           WELCOME
         </p>
       </BoxReveal>

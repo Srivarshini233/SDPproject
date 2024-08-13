@@ -2,16 +2,16 @@ import React from 'react'
 import { BoxRevealDemo } from './BoxReveal'
 import Footer from '@/components/web/Footer'
 import { Carousel } from 'react-responsive-carousel'
+import FeedbackForm from '../User/UserHome/FeedBack'
 const Home = () => {
   return (<>
-  <div className='flex justify-center items-center'><BoxRevealDemo/></div>
+  <div className='flex justify-center mt-20 items-center  bg-amber-200 '><BoxRevealDemo/></div>
   
-    <div className='w-full h-screen flex justify-center items-center text-xl pt-20'>
+    <div className='w-full  bg-amber-200  h-screen flex justify-center items-center text-xl pt-20'>
        
 
-        <div className='h-[80vh] w-screen flex gap-10 items-center'>
-           
-          <div className='h-full w-full flex justify-between items-center p-8 '>
+        <div className='h-[80vh]  bg-amber-200  w-screen flex gap-10 items-center'>
+              <div className='h-full w-full flex justify-between items-center p-8 '>
             <div>
             <h1 className='text-3xl font-bold mb-4'>Heyy!! Toys Unleash Creativity. Explore, Imagine, Enjoy!</h1>
             <p>These stores typically offer a wide range of products, including educational toys, dolls, action figures, board games, puzzles, and outdoor play equipment. Toy stores often aim to create a fun and engaging shopping experience, catering to both children and parents seeking entertainment, educational value, and developmental growth through play.</p>
@@ -53,6 +53,9 @@ const Home = () => {
           </Carousel></div>
         </div>
       </div>
+      <div className='bg-amber-200'>
+        
+        </div> 
       <Footer/>
 </>
   )

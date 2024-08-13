@@ -5,7 +5,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="foote bg-blue-200">
         <div className="flex-shrink-0 pl-20">
                         <img className="block lg:hidden h-8 w-auto" src="https://i.pinimg.com/236x/10/cc/fb/10ccfb09dee1a6975d90eeef70c9b8bc.jpg" alt="Logo" />
                         <img className="hidden lg:block h-12" src="https://i.pinimg.com/236x/10/cc/fb/10ccfb09dee1a6975d90eeef70c9b8bc.jpg" alt="Logo" />
@@ -57,7 +57,7 @@ const Footer = () => {
 
           <div className="footer-section">
             <h4>Follow Us</h4>
-            <ul className="social-links">
+            <ul className="social-links ">
               <li>
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                   <FontAwesomeIcon icon={faFacebook} className='pr-2'/> Facebook

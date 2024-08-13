@@ -33,10 +33,10 @@ const UserHome = ({handleNavigation}) => {
     };
 
   return (
-    <div className=" bg-gray-100 ">
-    <nav className="bg-blue-200 shadow-md p-6 relative z-50">
+    <div className=" bg-gray-100">
+    <nav className="bg-blue-200 shadow-md p-4 relative z-50">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-xl text-fuchsia-700 font-serif">TOYTIDE</div>
+        <div className="text-xl text-fuchsia-700 justify-start font-serif">TOYTIDE</div>
         <div className="flex space-x-6">
           <div
             onMouseEnter={() => handleMouseEnter('ages')}
@@ -124,8 +124,8 @@ const UserHome = ({handleNavigation}) => {
           > */}
         <div className="text-lg  text-purple-800 flex items-center pr-2">
           
-          <div className="pl-3 font-semibold">{username}</div>
-          <div  className="pl-4"><button onClick={()=>handleNavi("/")} > LogOut </button></div>
+          <div className="pl-3 p-3 font-semibold">{username}</div>
+          <div  className="pl-4 p-3"><button onClick={()=>handleNavi("/")} > LogOut </button></div>
           {/* {dropdown==='welcome' &&(
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-50">
 

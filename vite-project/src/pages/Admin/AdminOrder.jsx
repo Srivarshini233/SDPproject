@@ -87,10 +87,10 @@ const AdminOrders = () => {
                         className='h-8 w-8 p-1 text-green-500 cursor-pointer hover:bg-green-500 hover:text-background rounded-md'
                         onClick={() => handleConfirmOrder(order.orderId)}
                       />
-                      <TrashIcon 
+                      {/* <TrashIcon 
                         className='h-8 w-8 p-1 text-red-500 cursor-pointer hover:bg-red-500 hover:text-background rounded-md'
                         onClick={() => handleDelete(order.orderId)}
-                      />
+                      /> */}
                     </span>
                   </TableCell>
                 </TableRow>

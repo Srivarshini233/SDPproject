@@ -19,7 +19,7 @@ const AdminDashboard = () => {
                     <Users className="h-6 w-6 text-primary" />
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">10000</div>
+                    <div className="text-2xl font-bold">1000</div>
                 </CardContent>
             </Card>
             <Card className='w-1/4 border border-primary'>
@@ -30,7 +30,7 @@ const AdminDashboard = () => {
                     <Users className="h-6 w-6 text-primary" />
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">9999</div>
+                    <div className="text-2xl font-bold">349</div>
                 </CardContent>
             </Card>
             <Card className='w-1/4 border border-primary'>
@@ -41,7 +41,7 @@ const AdminDashboard = () => {
                     <ShoppingBag className="h-6 w-6 text-primary" />
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">10,000</div>
+                    <div className="text-2xl font-bold">500+</div>
                 </CardContent>
             </Card>
             <Card className='w-1/4 border border-primary'>
@@ -52,7 +52,7 @@ const AdminDashboard = () => {
                     <DollarSign className="h-6 w-6 text-primary" />
                 </CardHeader>
                 <CardContent>
-                    <div className="text-2xl font-bold">10,000,00</div>
+                    <div className="text-2xl font-bold">10,000</div>
                 </CardContent>
             </Card>
         </div>
