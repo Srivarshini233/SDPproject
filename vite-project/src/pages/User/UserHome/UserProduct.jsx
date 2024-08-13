@@ -88,6 +88,7 @@ const ToyProduct = () => {
         <button onClick={() => handleNavigation("/shopbycategory")} className="nav-button">Home</button>
         <button className="nav-button" onClick={() => handleNavigation("/wishlist")}>Wishlist ❤</button>
         <button className="nav-button" onClick={() => handleNavigation("/cart")}>Cart 🛒</button>
+        <div  className="pl-4 p-3"><button onClick={()=>handleNavigation("/")} > LogOut </button></div>
       </nav>
       <aside className="filters">
         <h2>.</h2>
@@ -113,7 +114,7 @@ const ToyProduct = () => {
                 type="checkbox"
                 id={shape}
                 checked={selectedFilters.shape[shape]}
-                onChange={() => toggleFilter("shape", shape)}
+               // onChange={() => toggleFilter("shape", shape)}
               />
               <label
                 htmlFor={shape}
@@ -155,7 +156,7 @@ const ToyProduct = () => {
                 type="checkbox"
                 id={size}
                 checked={selectedFilters.size[size]}
-                onChange={() => toggleFilter("size", size)}
+               // onChange={() => toggleFilter("size", size)}
               />
               <label
                 htmlFor={size}

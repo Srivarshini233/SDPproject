@@ -21,6 +21,7 @@ const Cart = () => {
       <nav className='navbar nav-container'>
         <button onClick={() => navigate("/shopbycategory")} className="nav-button">Home</button>
         <button onClick={() => navigate("/wishlist")} className="nav-button">Wishlist ❤</button>
+        <button onClick={()=>navigate("/")} > LogOut </button>
       </nav>
       <h2 className='font-bold text-decoration flex justify-center items-center mt-28 pb-5'>Product in your Cart🛒</h2>
       <div className="cart-grid">

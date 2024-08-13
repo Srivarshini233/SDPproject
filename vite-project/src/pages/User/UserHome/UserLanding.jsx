@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 import { User } from "@/services/user";
 import Footer from "@/components/web/Footer";
 import { authService } from "@/services/auth";
+import UserSettings from "./UserSettings";
 
 const UserHome = ({handleNavigation}) => {
   const [username,setUsername]=useState(null)
@@ -31,7 +32,9 @@ const UserHome = ({handleNavigation}) => {
     const handleMouseLeave = () => {
       setDropdown(null);
     };
-
+   const handleUser=(path)=>{
+    navigate(path);
+   }
   return (
     <div className=" bg-gray-100">
     <nav className="bg-blue-200 shadow-md p-4 relative z-50">
@@ -124,7 +127,7 @@ const UserHome = ({handleNavigation}) => {
           > */}
         <div className="text-lg  text-purple-800 flex items-center pr-2">
           
-          <div className="pl-3 p-3 font-semibold">{username}</div>
+          <div className="pl-3 p-3 font-semibold" onClick={()=>handleUser("/usersettings")}>{username}</div>
           <div  className="pl-4 p-3"><button onClick={()=>handleNavi("/")} > LogOut </button></div>
           {/* {dropdown==='welcome' &&(
               <div className="absolute left-0 mt-2 w-48 bg-white border rounded shadow-lg z-50">

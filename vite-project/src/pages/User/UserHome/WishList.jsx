@@ -6,21 +6,22 @@ import "./WishList.css"; // Import your custom styles
 const WishList = () => {
   const navigate = useNavigate();
   const { wishList, toggleFavorite, addToCart } = useContext(StoreContext);
-
+ 
   return (
     <div className="wishlist-page">
       <div className="nav-bar-start">
       <nav className="navbar">
-        <div className="navbar-right">
-          <button onClick={() => navigate("/shopbycategory")} className="nav-button">
+        <div className="navbar-right p-4 gap-2">
+          <button onClick={() => navigate("/shopbycategory")} className="nav-button p-2  gap-2">
             Home
           </button>
-          <button onClick={() => navigate("/toyproduct")} className="nav-button">
+          <button onClick={() => navigate("/toyproduct")} className="nav-button gap-2">
             Toys
           </button>
           <button onClick={() => navigate("/cart")} className="nav-button">
             Cart 🛒
           </button>
+          <button onClick={()=>navigate("/")} > LogOut </button>
         </div>
       </nav>
       </div>

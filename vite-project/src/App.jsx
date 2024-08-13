@@ -18,6 +18,7 @@ import BuyNow from './pages/User/UserHome/BuyNow';
 import OrderDetails from './pages/User/UserHome/ConfirmPage';
 import AdminProducts from './pages/Admin/AdminProduct';
 import AdminOrders from './pages/Admin/AdminOrder';
+import UserSettings from './pages/User/UserHome/UserSettings';
 const App = () => {
   return (
     <StoreProvider>
@@ -37,6 +38,8 @@ const App = () => {
             <Route path='/cart' element={<Cart/>} />
             <Route path="/buynow" element={<BuyNow />} />
             <Route path="/confirmpage" element={<OrderDetails />} />
+            <Route path="/usersettings" element={<UserSettings />} />
+            
           </Route>
           <Route element={<Adminlayout />}>
             <Route path='admin/dashboard' element={<AdminDashboard />} />
